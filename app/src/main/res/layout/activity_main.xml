@@ -23,7 +23,7 @@
             android:layout_weight="10" />
 
         <Switch
-            android:id="@+id/switch1"
+            android:id="@+id/switch"
             android:layout_width="match_parent"
             android:layout_height="0px"
             android:layout_weight="10"
@@ -40,32 +40,32 @@
             android:layout_weight="25">
 
             <RadioButton
-                android:id="@+id/radioButton"
+                android:id="@+id/rbR"
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="10"
-                android:text="RadioButton" />
+                android:text="Red" />
 
             <RadioButton
-                android:id="@+id/radioButton2"
+                android:id="@+id/rbY"
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="10"
-                android:text="RadioButton" />
+                android:text="Yellow" />
 
             <RadioButton
-                android:id="@+id/radioButton3"
+                android:id="@+id/rbB"
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="10"
-                android:text="RadioButton" />
+                android:text="Green" />
 
             <RadioButton
-                android:id="@+id/radioButton4"
+                android:id="@+id/rbG"
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="10"
-                android:text="RadioButton" />
+                android:text="Green" />
         </RadioGroup>
 
         <Space
@@ -78,7 +78,7 @@
             android:layout_width="match_parent"
             android:layout_height="0px"
             android:layout_weight="10"
-            android:text="Button" />
+            android:text="ClickMe" />
 
         <Space
             android:layout_width="match_parent"
