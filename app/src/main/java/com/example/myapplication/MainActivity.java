@@ -73,4 +73,12 @@ public class MainActivity extends AppCompatActivity
             layout.setBackgroundColor(Color.BLUE);
         }
     }
+
+    public void buttonClicked(View view)
+    {
+        if(switchState)
+        {
+            checkRadioButton();
+        }
+    }
 }
