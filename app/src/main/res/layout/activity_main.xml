@@ -40,14 +40,14 @@
             android:id="@+id/rg"
             android:layout_width="match_parent"
             android:layout_height="0px"
-            android:layout_weight="25"
-            android:onClick="radioButtonClicked">
+            android:layout_weight="25">
 
             <RadioButton
                 android:id="@+id/rbR"
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="10"
+                android:onClick="radioButtonClicked"
                 android:text="Red" />
 
             <RadioButton
@@ -55,6 +55,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="10"
+                android:onClick="radioButtonClicked"
                 android:text="Yellow" />
 
             <RadioButton
@@ -62,13 +63,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="10"
-                android:text="Green" />
+                android:onClick="radioButtonClicked"
+                android:text="Blue" />
 
             <RadioButton
                 android:id="@+id/rbG"
                 android:layout_width="match_parent"
                 android:layout_height="0px"
                 android:layout_weight="10"
+                android:onClick="radioButtonClicked"
                 android:text="Green" />
         </RadioGroup>
 
