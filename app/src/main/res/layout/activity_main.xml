@@ -29,7 +29,8 @@
             android:layout_height="0px"
             android:layout_weight="10"
             android:onClick="switchClicked"
-            android:text="Switch" />
+            android:text="Switch"
+            android:textSize="18sp" />
 
         <Space
             android:layout_width="match_parent"
@@ -48,7 +49,8 @@
                 android:layout_height="0px"
                 android:layout_weight="10"
                 android:onClick="radioButtonClicked"
-                android:text="Red" />
+                android:text="Red"
+                android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/rbY"
@@ -56,7 +58,8 @@
                 android:layout_height="0px"
                 android:layout_weight="10"
                 android:onClick="radioButtonClicked"
-                android:text="Yellow" />
+                android:text="Yellow"
+                android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/rbB"
@@ -64,7 +67,8 @@
                 android:layout_height="0px"
                 android:layout_weight="10"
                 android:onClick="radioButtonClicked"
-                android:text="Blue" />
+                android:text="Blue"
+                android:textSize="18sp" />
 
             <RadioButton
                 android:id="@+id/rbG"
@@ -72,8 +76,14 @@
                 android:layout_height="0px"
                 android:layout_weight="10"
                 android:onClick="radioButtonClicked"
-                android:text="Green" />
+                android:text="Green"
+                android:textSize="18sp" />
         </RadioGroup>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            android:layout_weight="10" />
 
         <Button
             android:id="@+id/button"
@@ -81,17 +91,14 @@
             android:layout_height="0px"
             android:layout_weight="10"
             android:onClick="buttonClicked"
-            android:text="ClickMe" />
+            android:text="ClickMe"
+            android:textSize="18sp" />
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="0px"
-            android:layout_weight="10" />
+            android:layout_weight="15" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="0px"
-            android:layout_weight="10" />
     </LinearLayout>
 
     <Space
