@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity
     Button button;
     LinearLayout layout;
     RadioGroup rg;
-    RadioButton rbR, rbY, rbG, rbB;
+    int rbR, rbY, rbG, rbB;
 
     boolean switchState;
 
@@ -33,10 +33,10 @@ public class MainActivity extends AppCompatActivity
         layout=(LinearLayout)findViewById(R.id.layout);
         rg=(RadioGroup)findViewById(R.id.rg);
 
-        rbR=(RadioButton)findViewById(R.id.rbR);
-        rbY=(RadioButton)findViewById(R.id.rbY);
-        rbG=(RadioButton)findViewById(R.id.rbG);
-        rbB=(RadioButton)findViewById(R.id.rbB);
+        rbR=findViewById(R.id.rbR).getId();
+        rbY=findViewById(R.id.rbY).getId();
+        rbG=findViewById(R.id.rbG).getId();
+        rbB=findViewById(R.id.rbB).getId();
 
         switchState = mySwitch.isChecked();
     }
@@ -56,22 +56,11 @@ public class MainActivity extends AppCompatActivity
 
     public void checkRadioButton()
     {
-        if (rbR.isChecked())
-        {
-            layout.setBackgroundColor(Color.RED);
-        }
-        else if (rbY.isChecked())
-        {
-            layout.setBackgroundColor(Color.YELLOW);
-        }
-        else if (rbG.isChecked())
-        {
-            layout.setBackgroundColor(Color.GREEN);
-        }
-        else if (rbB.isChecked())
-        {
-            layout.setBackgroundColor(Color.BLUE);
-        }
+        int id=rg.getCheckedRadioButtonId();
+        if (id==rbR) layout.setBackgroundColor(Color.RED);
+        else if (id==rbY) layout.setBackgroundColor(Color.YELLOW);
+        else if (id==rbG) layout.setBackgroundColor(Color.GREEN);
+        else if (id==rbB) layout.setBackgroundColor(Color.BLUE);
     }
 
     public void buttonClicked(View view)
